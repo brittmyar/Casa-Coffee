@@ -4,7 +4,9 @@ const coffeeSchema = new mongoose.Schema({
     name: { type: String, required: true },
     description: { type: String, required: true },
     ingredients: { type: String, required: false },
-    instructions: { type: String, required : false}
+    instructions: { type: String, required : false},
+    img: {type: String, required: true}
+
 });
 
 const Coffee = mongoose.model('Coffee', coffeeSchema);
