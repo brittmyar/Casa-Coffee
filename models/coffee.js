@@ -5,7 +5,7 @@ const coffeeSchema = new mongoose.Schema({
     description: { type: String, required: true },
     ingredients: { type: String, required: false },
     instructions: { type: String, required : false},
-    img: {type: String, required: true}
+    img: {type: String, required: false}
 
 });
 

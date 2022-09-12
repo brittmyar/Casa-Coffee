@@ -15,15 +15,24 @@
     <h1>Welcome to Casa Coffee</h1>
     <ul>
         <% coffee.forEach(coffee=> { %>
-            <li><a href="/coffee/<%=coffee._id %>">
+            <li>
+                <a href="/<%=coffee._id %>">
+                    <img id="primary" 
+                    src="<%=coffee.img %>">
+                </a>
+                <br />
+                <a href="/coffee/<%=coffee._id %>">
                     <%=coffee.name; %>
-                </a></li>
-            <form action="/coffee/<%= coffee.id %>?_method=DELETE" method="POST">
-                <input type="submit" value="DELETE" />
-            </form>
-            <a href="/coffee/<%=coffee._id %>/edit">Edit</a>
+                </a>
+            </li>
             <% }) %>
     </ul>
 </body>
+<style>
+    #primary {
+        width: 200px;
+        height: auto;
+    }
+</style>
 
 </html>

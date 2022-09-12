@@ -12,7 +12,7 @@
 			<a href="/coffee">Back to Casa Coffee</a>
 		</nav>
 		<h1><%=coffee.name %></h1>
-        <img src= "<%=coffee.img %>">
+        <img id="primary" src= "<%=coffee.img %>">
         <br />
 		Description: <%= coffee.description%>
 		<br />
@@ -20,6 +20,16 @@
 		<br />
         Instructions: <%= coffee.instructions%>
 		<br />
+        <form action="/coffee/<%= coffee.id %>?_method=DELETE" method="POST">
+            <input type="submit" value="DELETE" />
+        </form>
+        <button><a href="/coffee/<%=coffee._id %>/edit">Edit</a></button>
 		
 	</body>
+    <style>
+        #primary {
+            width: 400px;
+            height: auto;
+        }
+    </style>
 </html>
