@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Coffee List</title>
+  </head>
+
+  <body>
+    <h1>Edit Coffee</h1>
+    <form action="/coffe/<%=coffee._id%>_method=PUT" method="POST">
+      Name: <input type="text" name="name" value="<%=coffee.name%>" /><br />
+      Description: <input type="text" name="description" value="<%=coffee.description%>" /><br />
+      Ingredients: <input type="text" name="ingredients" value="<%=coffee.ingredients%>" /><br />
+      Instructions: <input type="text" name="instructions" value="<%=coffee.instructions%>" /><br />
+      <input type="submit" value="Submit Changes" />
+    </form>
+  </body>
+</html>
