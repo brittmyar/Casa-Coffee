@@ -12,6 +12,7 @@
 - CSS
 - HTML
 - EJS
+- JavaScript
 - Bootstrap
 
 ## Features 
