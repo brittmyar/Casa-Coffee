@@ -11,7 +11,7 @@
 - Postman
 - CSS
 - HTML
-- JavaScript
+- EJS
 - Bootstrap
 
 ## Features 
@@ -23,3 +23,7 @@
 
 ## Wireframe
 ![Wireframe project 2](https://user-images.githubusercontent.com/110944297/190489013-77463d87-2c8c-4e75-90d8-9107fbe8b977.jpg)
+
+## Project Next Steps
+- Users will be able to purchase the ingredients
+- Users will be able to download the coffee
