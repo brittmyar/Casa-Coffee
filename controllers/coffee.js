@@ -36,16 +36,14 @@ coffeeRouter.delete("/:id", (req, res) => {
 
 // Update
 coffeeRouter.put("/:id", (req, res) => {
-    Book.findByIdAndUpdate(
+    Coffee.findByIdAndUpdate(
       req.params.id,
-      req.body,
-      {
+      req.body, {
         new: true,
       },
       (error, updatedCoffee) => {
         res.redirect(`/coffee/${req.params.id}`)
-      }
-    )
+      }); 
   })
 
 

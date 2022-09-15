@@ -4,19 +4,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Casa Coffee List</title>
   </head>
 
-  <body>
+  <body class="edit">
+    <div class="container">
     <h1>Edit Coffee</h1>
-    <form action="/coffee/<%=coffee._id%>_method=PUT" method="POST">
-      Name: <input type="text" name="name" value="<%=coffee.name%>" /><br />
-      Description: <input type="text" name="description" value="<%=coffee.description%>" /><br />
-      Ingredients: <input type="text" name="ingredients" value="<%=coffee.ingredients%>" /><br />
-      Instructions: <input type="text" name="instructions" value="<%=coffee.instructions%>" /><br />
-      Image link: <input type="text" name="img" /><br />
-      <input type="submit" value="Submit Changes" />
+    
+    <form class="edit" action="/coffee/<%=coffee._id%>?_method=PUT" method="POST">
+        <label class="edit" for="name">Name</label>
+        <input class="edit" type="text" name="name" value="<%=coffee.name %>" /><br />
+        <label class="edit" for="description">Description</label>
+        <input class="edit" type="text" name="description" value="<%=coffee.description %>" /><br />
+        <label class="edit" for="ingedients">Ingredients</label>
+        <input class="edit" type="text" name="ingredients" value="<%=coffee.ingredients %>" /><br />
+        <label class="edit" for="instructions">Instructions</label>
+        <input class="edit" type="text" name="instructions" value="<%=coffee.instructions %>" /><br />
+        <label class="edit" for="img">Img</label>
+        <input class="edit" type="text" name="img" value="<%=coffee.img %>"/><br />
+        <button class="btn btn-primary" type="submit">Submit Changes</button>
     </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
   </body>
+  
 </html>

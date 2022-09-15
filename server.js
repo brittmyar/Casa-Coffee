@@ -22,11 +22,8 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 // Middleware / gives access to req.body
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"))
+app.use(express.static('public'))
 app.use('/coffee', coffeeController);
-
-
-
-
 
 // Listener 
 const PORT = process.env.PORT;
