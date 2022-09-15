@@ -16,13 +16,6 @@ coffeeRouter.get('/', (req, res) => {
 });
 
 // New
-// coffeeRouter.get('/new', (req, res) => {
-//     Coffee.find({}, (error, allCoffee) => {
-//         res.render('new.ejs', {
-//             coffee: allCoffee,
-//         });
-//     });
-// });
 coffeeRouter.get("/new", (req, res) => {
     res.render("new.ejs")
 })
