@@ -23,7 +23,7 @@ coffeeRouter.get("/new", (req, res) => {
 // Delete
 coffeeRouter.delete("/:id", (req, res) => {
     Coffee.findByIdAndRemove(req.params.id, (err, data) => {
-      res.redirect("/coffee")
+      res.redirect("/")
     })
   })
 
@@ -43,7 +43,7 @@ coffeeRouter.put("/:id", (req, res) => {
 // Create
 coffeeRouter.post('/', (req, res) => {
     Coffee.create(req.body, (error, createdCoffee) => {
-        res.redirect('/coffee');
+        res.redirect('/');
     });
 });
 
