@@ -28,3 +28,6 @@
 ## Project Next Steps
 - Users will be able to purchase the ingredients
 - Users will be able to download the coffee
+
+## Getting Started
+click [here](https://casa-coffee.herokuapp.com/) to see the app in action
