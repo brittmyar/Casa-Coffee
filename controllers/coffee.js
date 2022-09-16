@@ -7,13 +7,13 @@ const Coffee = require('../models/coffee');
 ////////////
 
 // Index
-coffeeRouter.get('/', (req, res) => {
-    Coffee.find({}, (error, allCoffee) => {
-      res.render('index.ejs', {
-        coffee: allCoffee,
-      });  
-    });  
-});
+// coffeeRouter.get('/', (req, res) => {
+//     Coffee.find({}, (error, allCoffee) => {
+//       res.render('index.ejs', {
+//         coffee: allCoffee,
+//       });  
+//     });  
+// });
 
 // New
 coffeeRouter.get("/new", (req, res) => {
