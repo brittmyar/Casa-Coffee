@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
     <title>Coffee List</title>
-</head>
+  </head>
 
-<body class="index">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <body class="index">
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
     <nav>
-        <button><a href="/coffee/new">Add a New Coffee</a></button>
+      <button><a href="/coffee/new">Add a New Coffee</a></button>
     </nav>
-    <h1 class="index">Welcome to Casa Coffee</h1>
+    <h1 class="index">Welcome to Casa Coffee Shop</h1>
     <div class="container">
-    <div class="row">
+      <div class="row">
         <% coffee.forEach(coffee=> { %>
-            <div class="col">
-                <a href="/coffee/<%=coffee._id %>">
-                    <img class="primary" 
-                    src="<%=coffee.img %>">
-                </a>
-                <br />
-                <a href="/coffee/<%=coffee._id %>">
-                    <%=coffee.name; %>
-                </a>
-            </div>
-            <% }) %>
+        <div class="col">
+          <a href="/coffee/<%=coffee._id %>">
+            <img class="primary" src="<%=coffee.img %>" />
+          </a>
+          <br />
+          <a href="/coffee/<%=coffee._id %>"> <%=coffee.name; %> </a>
+        </div>
+        <% }) %>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
