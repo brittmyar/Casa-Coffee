@@ -2,7 +2,7 @@
 ![Casa-Coffee](https://user-images.githubusercontent.com/110944297/190485837-b0925c66-c763-44b2-883d-cab3c3cf16c4.jpg)
 
 ## Description 
-- I created Casa-Coffe for the ones who simply don't feel like going to a coffee shop and spending money just to have it not made the way you like it. I wanted to have a list of coffee's that you can make right at home and make it your liking.
+- I created Casa-Coffee for the ones who simply don't feel like going to a coffee shop and spending money just to have it not made the way you like it. I wanted to have a list of coffee's that you can make right at home and make it your liking.
 
 ## Technologies Used 
 - node.js
@@ -28,3 +28,6 @@
 ## Project Next Steps
 - Users will be able to purchase the ingredients
 - Users will be able to download the coffee
+
+## Getting Started
+click [here](https://casa-coffee.herokuapp.com/) to see the app in action
