@@ -37,7 +37,7 @@ div.label {
     height: auto;
 }
 body.index {
-    background-image: url(https://wallpaperaccess.com/full/41607.jpg);
+    background-image: url(https://e0.pxfuel.com/wallpapers/583/685/desktop-wallpaper-brown-side-gradient-background-stock-public-domain-dark-brown-gradient.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,3 +64,23 @@ label.new {
     width: 150px;
     text-align: right;
   }
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+.btn.btn-info {
+    background-color: rgb(247, 214, 174) !important;
+    border-color: rgb(247, 214, 174) !important;
+}
+.btn.btn-primary {
+    background-color: rgb(179, 129, 65) !important;
+    border-color: rgb(179, 129, 65) !important;
+}
+
+.btn {
+    color: white !important;
+}
+
+.btn.btn-danger {
+    color: black !important;
+}

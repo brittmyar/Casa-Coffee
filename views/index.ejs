@@ -26,14 +26,16 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-    <nav>
-      <button><a href="/coffee/new">Add a New Coffee</a></button>
+    <nav class="navbar">
+      <button class="btn btn-info">
+        <a href="/coffee/new">Add a New Coffee</a>
+      </button>
     </nav>
     <h1 class="index">Welcome to Casa Coffee Shop</h1>
     <div class="container">
       <div class="row">
         <% coffee.forEach(coffee=> { %>
-        <div class="col">
+        <div class="col-sm-3">
           <a href="/coffee/<%=coffee._id %>">
             <img class="primary" src="<%=coffee.img %>" />
           </a>
